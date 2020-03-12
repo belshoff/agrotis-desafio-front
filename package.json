@@ -23,6 +23,7 @@
     "up-files": "push-dir --dir=build --branch=gh-pages --cleanup",
     "deploy": "yarn build && yarn up-files"
   },
+  "homepage": "/agrotis-desafio-front/",
   "eslintConfig": {
     "extends": "react-app"
   },
