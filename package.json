@@ -19,7 +19,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "up-files": "push-dir --dir=build --branch=gh-pages --cleanup",
+    "deploy": "yarn build && yarn up-files"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1"
   }
 }
